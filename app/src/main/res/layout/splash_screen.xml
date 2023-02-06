@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/github"
+        android:src="@drawable/github_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GITHUB REPOSITORIES TRACKER"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textColor="#413D3D"
+        android:layout_below="@+id/github"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Write your github Username"
+        android:textColor="#4A4A4A"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:background="@drawable/round_corner"
+        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:textColor="#252525"
+        android:text="Get Started"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="56dp"/>
+
+</RelativeLayout>
